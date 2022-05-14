@@ -1,11 +1,3 @@
-// fazer o ranekamento do 1º 2º e 3º -> PARÂMETRO
-// declarar variável de 1º 2º e 3º -> VARIÁVEL
-// se for competidor índice 0 -> MANTÉM
-// se for competidor índice 1 -> 1 VAI PRA 0 E 0 É "DANIEL" 
-// se for competidor índice 2 -> 1 VAI PRA 1 E 1 É "DANIEL"
-// mostrar no console o resultado da variável, dentro da função -> CONSOLE.LOG(VARIÁVEL)
-// fora, chamar a função e declarar os valores -> "Fulano" "Cicrano" "Beltrano"
-
 function ranking(primeiro, segundo, terceiro) {
     let competidores = [primeiro, segundo, terceiro]
     if (competidores[0] === "Daniel") {
@@ -19,6 +11,6 @@ function ranking(primeiro, segundo, terceiro) {
         competidores[2] = competidores[1]
         competidores[1] = "Daniel"
     }
-    console.log(competidores)
+    return `1º Colocado: ${competidores[0]}, 2º Colocado: ${competidores[1]}, 3º Colocado: ${competidores[2]}`
 }
-ranking("Rafael", "Manoel", "Daniel")
+console.log(ranking("Rafael", "Manoel", "Daniel"))
